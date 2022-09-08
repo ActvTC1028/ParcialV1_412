@@ -6,18 +6,18 @@ input_values = [
     # Test case 1
     (
         # Inputs
-        ["25", "34", "0", "20", "-1"],
+        ["4","25", "34", "0", "20"],
         # Outputs
-        ["Número: ", "Número: ","Número: ", "Número: ","Número: ", "Pares: 3", "Suma de impares: 25"],
+        ["Cantidad de números: ", "Número: ", "Número: ","Número: ", "Número: ", "Pares: 3", "Suma de impares: 25"],
         # Message in case of failure
         "Revisa que estes identificando y contabilizando bien los pares y sumando los impares"
     ),
     # Test case 2
     (
        # Inputs
-        ["11", "34", "1", "-1"],
+        ["3","11", "34", "1"],
         # Outputs
-        ["Número: ", "Número: ","Número: ", "Número: ", "Pares: 1", "Suma de impares: 12"],
+        ["Cantidad de números: ", "Número: ","Número: ", "Número: ", "Pares: 1", "Suma de impares: 12"],
         # Message in case of failure
         "Revisa que estes identificando y contabilizando bien los pares y sumando los impares"
     ),
@@ -26,16 +26,16 @@ input_values = [
         # Inputs
         ["-100"],
         # Outputs
-        ["Número: ", "Pares: 0", "Suma de impares: 0"],
+        ["Cantidad de números: ", "La cantidad debe ser positiva"],
         # Message in case of failure
         "Revisa que estes identificando y contabilizando bien los pares y sumando los impares"
     ),
     # Test case 4
     (
         # Inputs
-        ["0", "-100"],
+        ["1", "-100"],
         # Outputs
-        ["Número: ", "Número: ", "Pares: 1", "Suma de impares: 0"],
+        ["Cantidad de números: ", "Número: ", "Pares: 1", "Suma de impares: 0"],
         # Message in case of failure
         "Revisa que estes identificando y contabilizando bien los pares y sumando los impares"
     )
