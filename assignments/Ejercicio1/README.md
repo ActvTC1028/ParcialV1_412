@@ -17,44 +17,41 @@ if __name__ == '__main__':
 ```
 
 ## Descripción del programa  
-En una tienda de celulares al mayoreo, el precio de los mismos se ha establecido como fijo de acuerdo a la cantidad de productos que lleves y si el celular es de gama alta o media. Observa la tabla de abajo. **En este problema, asumimos que un cliente se lleva celulares de una sóla gama**
+Escribe un programa que calcule el monto a pagar de una cuenta por datos consumidos en un plan celular de una compañia telefónica. Se calcula de acuerdo al consumo de gigabytes consumidos en el mes y de acuerdo a la siguiente tabla y después ve los ejemplos:
 
+| Datos consumidos en GB |  Monto a pagar  |  
+| :-------------: |:-------------:| 
+| primeros 2      | SIN COSTO    |
+|entre 2 y 5 | 115 por cada GB que exceda de 2 y hasta 5  |
+|después de 5| 225 por cada GB que exceda de 5 mas el consumo de 2 a 5 |
 
-|     Cantidad    |  Gama baja    |  Gama alta     | 
-| :-------------: |:-------------:| :-------------:| 
-|   1 - 3         |    9500       |   15500        |
-|    > 3          |    8000       |   15500        |
+Así por ejemplo, si en una celular consumen 1.5 GB, la factura es por 0 pesos.
 
+Otro ejemplo, si en un celular se consumen 2.5 GB
+- por los primeros 2 no se paga nada
+- por el 0.5 restantes se paga 57.5 pesos (115 * 0.5)
+- En total se paga 57.5
 
-Escribe una función, la cual **recibe como parámetros**, la gama del celular (A ó M) y la cantidad de celulares que lleva y **regresa como valor de retorno** el costo final de esa cantidad de celulares.
+Otro ejemplo si en un celular se consumieron 7.5 GB el monto de la factura se calcula:
+- Por los primeros 2 no se paga nada
+- Por los 3 que siguen se paga 345 (115 * 3)
+- Por los 2.5 últimos se paga 562.5 (225 * 2.5)
+- En total se paga 907.5
 
-En la función main escribe el código necesario para preguntar al usuario la gama (A o M) y la cantidad de celulares y con el uso de la función creada anteriormente, desplegar el valor de la compra. Deberás validar en el main, que la cantidad sea mayor a 0 y la gama que te hayan dado es A o M, de lo contrario mandarás el mensaje de error como lo puedes ver en los ejemplos.
+De manera que, **escribe una función** que reciba como parámetro la **cantidad de GB** que se consumieron y que nos regrese el monto a pagar. 
+En la función main escribe el código necesario para preguntar al usuario la cantidad de GB del mes y usando la función se calcule el monto a pagar y se despliegue.
+
+**Entrada**  
+La cantidad de GB consumidos (número entero)
+
+**Salida**  
+El monto de la factura con el mensaje correspondiente (ve el ejemplo).
 
 **Ejemplo de ejecución del programa:** 
 ``` 
-Gama (A/M): M
-Cantidad: 4
-Total a pagar $31000 
+Cantidad de GB: 7.5
+La factura de este mes es por 907.5  
 ```
-**Otro ejemplo**
-``` 
-Gama (A/M): Media
-Cantidad: 5
-Error en los datos
-``` 
-**Otro ejemplo**
-``` 
-Gama (A/M): M
-Cantidad: 4
-Total a pagar $32000
-``` 
-**Uno más**
-``` 
-Gama (A/M): A
-Cantidad: -5
-Error en los datos
-``` 
-
 **Nota:** Por favor no quites nada de lo que ya tienes, simplemente agrega el código 
 necesario dentro de la función main. 
 `if __name__ == '__main__':` debe quedarse en tu código para que las pruebas puedan 
@@ -62,5 +59,5 @@ ejecutarse adecuadamente.
 
 Una vez que termines tu actividad, si te da tiempo prueba con
 `pytest`, si no, simplemente súbela a tu repositorio en GitHub, con el proceso de commit + push.
-Debe ser enviada antes de las 13:00 hrs. que se cierra el ejercicio.
+Debe ser enviada antes de las 11:00 de la mañana que se cierra el ejercicio.
 
