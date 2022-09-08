@@ -2,7 +2,11 @@
 # Ejercicio 2 del examen parcial AD2021
 Ciclos - Cuántos pares e impares recibes
 
-Escribe un programa que reciba números positivos o negativos (considera el 0 como positivo) y vaya contando aquellos números que son pares y vaya sumando los impares. El programa deberá preguntar cuántos números va a recibir, recibe esa cantidad de números y al terminar de recibirlos debe mostrar el mensaje de cuántos pares recibió además de la suma de los impares.
+Escribe un programa que reciba números positivos o negativos (considera el 0 como positivo) y vaya contando aquellos números que son pares y vaya sumando los impares.
+
+El programa deberá preguntar cuántos números va a recibir, si la cantidad de números es 0 o menor deberá mandar el mensaje *La cantidad de números debe ser mayor a 0* de lo contrario recibe esa cantidad de números y al terminar de recibirlos debe mostrar el mensaje de cuántos pares recibió además de la suma de los impares (ve los ejemplos).
+
+En el ejemplo, observa que la solicitud de los números está numerada (Número 1: , Número 2, etc...) Así debe ser el mensaje de ingreso de datos.
 
 Modifica el programa que se encuentra en la carpeta `src` que se llama
 `exercise.py` y que contiene el siguiente código:
@@ -15,7 +19,7 @@ if __name__ == '__main__':
     main()
 ```
 
-Ejemplo de corrida:
+**Ejemplo de corrida:**
 
 ```
 Cantidad de números: 5
@@ -27,7 +31,11 @@ Número 5: 150
 Pares: 4
 Suma de impares: -3
 ```
-
+**Otro ejemplo**
+```
+Cantidad de números: 0
+La cantidad de números debe ser mayor a 0
+```
 
 **Nota:** Por favor no quites nada de lo que ya tienes, simplemente agrega el código 
 necesario dentro de la función main. 

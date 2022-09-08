@@ -8,7 +8,7 @@ input_values = [
         # Inputs
         ["4","25", "34", "0", "20"],
         # Outputs
-        ["Cantidad de números: ", "Número: ", "Número: ","Número: ", "Número: ", "Pares: 3", "Suma de impares: 25"],
+        ["Cantidad de números: ", "Número 1: ", "Número 2: ","Número 3: ", "Número 4: ", "Pares: 3", "Suma de impares: 25"],
         # Message in case of failure
         "Revisa que estes identificando y contabilizando bien los pares y sumando los impares"
     ),
@@ -17,7 +17,7 @@ input_values = [
        # Inputs
         ["3","11", "34", "1"],
         # Outputs
-        ["Cantidad de números: ", "Número: ","Número: ", "Número: ", "Pares: 1", "Suma de impares: 12"],
+        ["Cantidad de números: ", "Número 1: ","Número 2: ", "Número 3: ", "Pares: 1", "Suma de impares: 12"],
         # Message in case of failure
         "Revisa que estes identificando y contabilizando bien los pares y sumando los impares"
     ),
@@ -26,7 +26,7 @@ input_values = [
         # Inputs
         ["-100"],
         # Outputs
-        ["Cantidad de números: ", "La cantidad debe ser positiva"],
+        ["Cantidad de números: ", "La cantidad de números debe ser mayor a 0"],
         # Message in case of failure
         "Revisa que estes identificando y contabilizando bien los pares y sumando los impares"
     ),
@@ -35,7 +35,7 @@ input_values = [
         # Inputs
         ["1", "-100"],
         # Outputs
-        ["Cantidad de números: ", "Número: ", "Pares: 1", "Suma de impares: 0"],
+        ["Cantidad de números: ", "Número 1: ", "Pares: 1", "Suma de impares: 0"],
         # Message in case of failure
         "Revisa que estes identificando y contabilizando bien los pares y sumando los impares"
     )
